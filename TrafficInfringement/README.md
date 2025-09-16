@@ -1,0 +1,6 @@
+# My contribution to the task
+For this assignment, we used road traffic infringement data to analyze traffic trends in South Africa. The aim was to apply Explainable AI (XAI) to understand why certain accidents occur, for example whether age is a major factor in severe accidents. These insights could guide road safety measures and awareness campaigns by the traffic department.
+
+After preprocessing, two models were applied: decision tree and logistic regression. To interpret the results, we used SHAP, LIME, and PDP. SHAP was particularly valuable because it provided both global explanations (showing which factors were most influential across all accidents) and local explanations (why a specific accident was classified a certain way). This made it possible to see the overall drivers of accident severity while also understanding individual cases. LIME complemented this by giving clear, case-by-case explanations, showing the key features behind each single prediction. PDP helped visualize broader trends, illustrating how accident severity changed with one or two selected features, and whether certain combinations increased the risk.
+
+My contribution included analyzing model performance, applying SHAP and PDP explanations, and assisting in preparing the final report.
