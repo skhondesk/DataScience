@@ -1,1 +1,14 @@
+# The purpose and my contributions to the task
+Natural Language Processing (NLP) is becoming increasingly important in today’s interconnected world, where individuals from diverse linguistic backgrounds often need to communicate for specific purposes. NLP tools, however, are only as effective as the data they are trained on. In South Africa, we have 11 official languages, but 10 of them are considered low-resource, meaning there is insufficient data available to support their proper integration into NLP systems.
 
+This project aimed to address that challenge by creating a multilingual lexicon of words in South African languages, alongside assigning sentiment scores to selected sentences that could be used as training data for machine learning algorithms. While this does not fully solve the issue of low-resource languages in tools like everyday smart assistants, it represents a step towards enabling the training of machine learning models that could eventually support NLP applications in South African languages.
+
+The dataset provided consisted of 3,000 French words. The task involved translating the words into English and then into selected South African languages, which in our case were isiZulu, Afrikaans, and Sepedi. Each translated word was assigned a sentiment score on a scale ranging from -9 (strongly negative) to +9 (strongly positive). Following this, data preprocessing was performed, which included cleaning the dataset, conducting exploratory data analysis (EDA) to identify patterns and homonyms, and checking for mismatched sentiment scores.
+
+Machine learning models were then used to test whether sentiment predictions could be made at both the word and sentence level. A sentence corpus was constructed in isiZulu, which allowed us to train models for full-sentence sentiment classification. Finally, explainable AI (XAI) methods were applied to interpret the predictions and provide insight into why the models assigned particular sentiment scores.
+
+I contributed by translating words from French to English and isiZulu, helping to build English and isiZulu sentences for the corpus, applying machine learning models, and implementing explainable AI methods.
+
+The models were chosen for their different strengths. CNNs were used because they detect patterns in text and are effective for sentiment analysis. Naive Bayes and SVM were included as simple, lightweight models that work well with smaller datasets and provide good baselines for classification. LSTMs were applied because they are designed for sequences and can capture word order, making them useful for sentence-level sentiment.
+
+To improve interpretability, I used the LIME method. LIME highlights which words most influenced a model’s prediction, helping us check whether the assigned sentiment scores made sense and improving the trustworthiness of the results.
